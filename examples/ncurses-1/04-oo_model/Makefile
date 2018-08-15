@@ -1,4 +1,4 @@
-FLAGS=-lncurses
+FLAGS=-lncurses -std=c++11
 
 all: model
 
