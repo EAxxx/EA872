@@ -44,7 +44,7 @@ Fisica::Fisica(ListaDeCorpos *ldc) {
   this->lista = ldc;
 }
 
-void Fisica::update(uint64_t deltaT) {
+void Fisica::update(float deltaT) {
   // Atualiza parametros dos corpos!
   std::vector<Corpo *> *c = this->lista->get_corpos();
   for (int i = 0; i < (*c).size(); i++) {

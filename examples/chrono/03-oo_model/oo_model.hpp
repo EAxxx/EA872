@@ -33,6 +33,6 @@ class Fisica {
   public:
     Fisica(ListaDeCorpos *ldc);
     void add_corpo(Corpo *c);
-    void update(uint64_t deltaT);
+    void update(float deltaT);
 };
 #endif
