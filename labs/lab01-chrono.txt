@@ -1,0 +1,60 @@
+EA872 - 2s2018
+
+OBJETIVOS
+Ao fim destes experimentos, os alunos deverão ser capazes de projetar modelos
+físicos que operam em tempo real.
+
+ROTEIRO DE ESTUDO
+
+Parte 1: controle do tempo de execução de um program (5 min)
+a) Verifique o código examples/chrono/01-test/timing_test.cpp. O que ele faz?
+b) Qual é a função que determina a velocidade de execução do laço?
+
+Parte 2: simulação de um modelo físico (10 min)
+a) Verifique o código examples/chrono/02-model/model.cpp. Que situação de física
+está sendo simulada?
+b) Por quanto tempo a simulação está sendo executada?
+c) A situação física a ser simulada depende da derivada da posição do objeto em
+relação ao tempo. Como o fator "dt" (diferencial de tempo) está sendo simulado?
+d) A temporização oferecida pela função sleep_for() é precisa? Que evidência
+mostra isso?
+
+Parte 3: (20 min)
+a) Uma prática comum em sistemas orientados a objeto é criar classes que somente
+armazenam dados e classes que somente processam dados. Das classes definidas em
+examples/chrono/03-oo_model/oo_model.hpp e oo_model.cpp, quais armazenam dados e
+quais processam dados?
+
+b) Em examples/chrono/03-oo_model/model_mainloop.cpp, verifique quais
+funcionalidades da simulação do modelo foram "encapsuladas" em classes
+específicas. Quais funcionalidades continuam no laço principal?
+
+ATIVIDADE PRÁTICA
+Esta atividade prática tem o objetivo de permitir a implementação de um modelo
+físico preservando as características do sistema orientado a objetos. Tendo isso
+em vista, a atividade consiste em modificar os códigos de oo_model.hpp e
+oo_model.cpp (mas não de model_mainloop.cpp) de forma que o sistema
+simulado passe a ser um sistema massa-mola-amortecedor, isto é, um oscilador
+amortecido.
+
+ENTREGAS
+Colocar tudo em um arquivo .zip e enviar usando o sistema do Google Classroom!
+* Código computacional, incluindo todos os arquivos necessários para a
+  compilação e o Makefile (uma vez que eu vou rodar os programas usando os
+  Makefiles). Lembrar de nomear o arquivo como RA1_RA2.zip (por exemplo:
+  025304_025305.zip) e de colocar o nome da dupla (em comentário) em todos os
+  arquivos entregues.
+
+* Arquivo readme.txt com um breve texto (menos de 500 palavras!) explicitando e
+  justificando as alterações nos arquivos-fonte em relação ao programa original.
+  Também, o texto deve explicar onde os parâmetros do modelo estão
+  implementados.
+
+OBSERVAÇÕES
+1) Na forma atual, o programa está feito de forma que uma classe é responsável
+por reter dados e outra classe é responsável por processar dados. Essa estrutura
+deve, obrigatoriamente, ser mantida.
+
+2) O prazo final para entrega é às 23h59 do dia marcado. Não serão permitidos
+atrasos.
+
