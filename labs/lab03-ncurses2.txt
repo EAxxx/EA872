@@ -1,0 +1,67 @@
+EA872 - 2s2018
+
+OBJETIVOS
+Ao fim destes experimentos, os alunos deverão ser capazes de projetar sistemas
+para visualização e interação com de modelos físicos que operam em tempo real.
+
+ROTEIRO DE ESTUDO
+
+Parte 1: hello world do ncurses (10 min)
+a) Verifique o código examples/ncurses-2/01-helloworld.c. O que ele faz? Lembre de
+compilar com a flag -lncurses!
+b) O que fazem as funções iniscr(), printw(), refresh(), getch() e endwin()
+
+Parte 2: ilusão de movimento na tela (5 min)
+a) Verifique o código examples/ncurses-1/03-walker.c. O que ele faz?
+b) Como o programa cria a ilusão de que o sinal asterisco ('*') está "andando"
+na tela?
+
+Parte 3: mostrando um modelo físico na tela (5 min)
+Verifique o código examples/ncurses-2/03-runner.c.
+a) Que situação da física está sendo simulada? Como é possível interagir com
+ela?
+b) Que função é responsável por capturar entradas do teclado?
+c) Por que essa função executa numa thread separada do programa principal?
+d) Como o programa principal identifica a tecla que foi pressionada?
+e) Como o programa principal controla o término da thread responsável pelo
+teclado?
+
+Parte 4: interação com o teclado (20 min)
+Verifique os códigos que estão em examples/ncurses-2/04-oo_model/*.
+a) Compare-os com os códigos correspondentes em examples/chrono/03-oo_model/*.
+Quais são as diferenças?
+b) A componente teclado faz parte do Model, do View ou do Controller? Por que?
+c) Como funciona o código referente a threads em C++?
+
+ATIVIDADE PRÁTICA
+Esta atividade prática tem o objetivo de permitir a implementação de um
+visualizador de modelos físicos que preserva as características do sistema
+orientado a objetos e permite interação com o usuário em tempo real.
+Modifique o programa apresentado de tal forma que ele mostre um (ou mais de um)
+sistema massa-mola-amortecedor na tela e permita que o usuário controle forças
+que interagem com o sistema. Demonstre seu sistema controlando as forças pelo
+teclado e entrando em ressonância com o sistema projetado.
+
+
+ENTREGAS
+Colocar tudo em um arquivo .zip e enviar usando o sistema do Google Classroom!
+* Código computacional, incluindo todos os arquivos necessários para a
+  compilação e o Makefile (uma vez que eu vou rodar os programas usando os
+  Makefiles). Lembrar de nomear o arquivo como RA1_RA2.zip (por exemplo:
+  025304_025305.zip) e de colocar o nome da dupla (em comentário) em todos os
+  arquivos entregues.
+
+* Arquivo readme.txt com um breve texto (menos de 500 palavras!) explicitando e
+  justificando as alterações nos arquivos-fonte em relação ao programa original.
+  Também, o texto deve explicar onde os parâmetros do modelo estão
+  implementados.
+
+OBSERVAÇÕES
+1) Na forma atual, o programa está feito de forma que uma classe é responsável
+por reter dados, outra classe é responsável por processar dados e uma terceira
+classe é responsável por mostrar dados na tela. Essa estrutura
+deve, obrigatoriamente, ser mantida.
+
+2) O prazo final para entrega é às 23h59 do dia marcado. Não serão permitidos
+atrasos.
+
