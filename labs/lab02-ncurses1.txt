@@ -30,12 +30,17 @@ Verifique os códigos que estão em examples/ncurses-1/04-oo_model/*.
 a) Compare-os com os códigos correspondentes em examples/chrono/03-oo_model/*.
 Quais são as diferenças? Você vê alguma
 b) Que parte do programa principal (mainloop) foi encapsulada na classe Tela()?
+c) Identifique as classes que fazem parte do Model, do Controller e do View no
+código orientado a objetos.
 
 ATIVIDADE PRÁTICA
 Esta atividade prática tem o objetivo de permitir a implementação de um
 visualizador de modelos físicos que preserva as características do sistema
 orientado a objetos.
-Na implementação atual, o sistema imprime lixo na tela caso o objeto a ser
+1) Troque o modelo físico mostrado pelo sistema massa-mola-amortecedor e faça
+com que vários osciladores diferentes possam ser visualizados na tela (da mesma
+fora que, na implementação atual, há vários objetos caindo simultaneamente).
+2) Na implementação atual, o sistema imprime lixo na tela caso o objeto a ser
 representado esteja fora dos limites da tela (faça um teste, inicializando um
 objeto numa posição muito alta). Modifique o programa para que objetos fora da
 tela simplesmente não sejam impressos, isto é, fiquem "apagados" até que voltem
