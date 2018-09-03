@@ -19,7 +19,7 @@ int main() {
     fprintf(wout, "%f\n", output);
   }
 
-  fclose(pipein);
+  pclose(pipein);
   fclose(wout);
   return 0;
 }
