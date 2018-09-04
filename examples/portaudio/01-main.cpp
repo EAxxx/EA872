@@ -26,7 +26,7 @@ int main() {
   while (1) {
     std::this_thread::sleep_for (std::chrono::milliseconds(1));
     t1 = get_now_ms();
-    if (t1-t0 > 100) break;
+    if (t1-t0 > 500) break;
   }
 
   std::cout << "Audio initialized!\n";

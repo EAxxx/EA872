@@ -1,0 +1,64 @@
+EA872 - 2s2018
+
+OBJETIVOS
+Ao fim destes experimentos, os alunos deverão ser capazes de entender e utilizar
+sistemas de reprodução de áudio digital em seu projeto.
+
+ROTEIRO DE ESTUDO
+
+Obs: todos os codigos para esta aula estão no diretório examples/portaudio!
+
+Parte 1: 01-playback.hpp (10 minutos)
+No arquivo 01-playback.hpp, identifique as duas classes que foram declaradas.
+Faça uma busca rápida (ou discuta com sua dupla):
+
+a) Para que serve o identificador "namespace"?
+b) O que significa std::vector<float>?
+c) A biblioteca portaudio serve para acessar a placa de som. Qual das duas
+classes (Sample ou Player) parece iteragir com a biblioteca portaudio?
+
+Parte 2: 01-playback.cpp (10 minutos)
+a) Leia os códigos relacionados a Sample e a Player. Em qual componente (Model,
+View ou Controller) cada uma delas deveria ser colocada?
+
+b) A função mix_and_play() é uma função de callback. O que é uma função de
+callback? Quando a função mix_and_play() é chamada?
+
+c) A função mix_and_play() não está em uma thread separada, mas mesmo assim é
+chamada várias vezes durante a execução do programa. Como isso acontece?
+
+Parte 3: 01-main.cpp (10 minutos)
+a) Qual é o conteúdo de assets/blip.dat?
+
+b) Como o programa "reinicia" o som que deve ser tocado?
+
+
+ATIVIDADE PRÁTICA
+O objetivo desta atividade prática é incorporar som ao sistema interativo que
+foi implementado até o momento. Incorpore o código de playback de áudio em seu
+programa de forma que um som seja tocado sempre que o usuário pressiona alguma
+tecla durante a iteração com o sistema massa-mola-amortecedor ressonante.
+
+
+ENTREGAS
+Colocar tudo em um arquivo .zip e enviar usando o sistema do Google Classroom!
+* Código computacional, incluindo todos os arquivos necessários para a
+  compilação e o Makefile (uma vez que eu vou rodar os programas usando os
+  Makefiles). Lembrar de nomear o arquivo como RA1_RA2.zip (por exemplo:
+  025304_025305.zip) e de colocar o nome da dupla (em comentário) em todos os
+  arquivos entregues.
+
+* Arquivo readme.txt com um breve texto (menos de 500 palavras!) explicitando e
+  justificando as alterações nos arquivos-fonte em relação ao programa original.
+  Também, o texto deve explicar onde os parâmetros do modelo estão
+  implementados.
+
+OBSERVAÇÕES
+1) Na forma atual, o programa está feito de forma que uma classe é responsável
+por reter dados, outra classe é responsável por processar dados e uma terceira
+classe é responsável por mostrar dados na tela. Essa estrutura
+deve, obrigatoriamente, ser mantida.
+
+2) O prazo final para entrega é às 23h59 do dia marcado. Não serão permitidos
+atrasos.
+
