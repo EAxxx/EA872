@@ -1,0 +1,31 @@
+EA872 - 2s2018
+
+OBJETIVOS
+Ao fim deste roteiro, todos os alunos devem ser capazes de implementar um jogo
+digital com interação em tempo real e som.
+
+
+ATIVIDADE PRÁTICA
+Implemente um jogo digital com interação em tempo real.
+
+Os requisitos mínimos são:
+1) O jogo opera em tempo real e é um jogo ativo, isto é, coisas acontecem mesmo
+que o jogador não entre com nenhum comando.
+2) O jogo deve ter um objetivo que pode ser alcançado.
+3) Deve haver efeitos sonoros no jogo.
+4) O jogo deverá ser colocado no GitHub de forma que possa ser compilado e
+jogado em todos os computadores dos colegas.
+5) O código deverá ser estruturado obrigatoriamente usando o modelo
+Model-View-Controller.
+6) Deve haver comentários suficientes no código para substituir um relatório
+técnico.
+7) Junto ao jogo, entregue um arquivo README.txt com instruções para instalar e
+jogar.
+
+
+OBSERVAÇÕES
+1) O prazo final para entrega é às 23h59 do dia marcado. Não serão permitidos
+atrasos.
+2) Na entrega, coloque um link para o repositório GitHub em que o jogo está.
+
+
