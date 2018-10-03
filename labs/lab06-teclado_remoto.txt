@@ -1,0 +1,51 @@
+EA872 - 2s2018
+
+OBJETIVOS
+Ao fim deste roteiro, todos os alunos devem ser capazes de implementar um
+sistema que transmite o tocar de teclas através de um socket.
+
+ROTEIRO GUIADO
+Objetivo: entender como funciona um conjunto servidor-cliente usando sockets.
+
+Usando o código de server.c, encontre:
+1) Qual é a função que especifica o tipo de conexão e o protocolo usado?
+2) Qual é a função que abre uma "porta"?
+3) Qual é a função que informa ao sistema que informa ao sistema que um socket
+deve ser colocado em modo de escuta?
+4) Qual é a função que "espera" uma conexão vinda da porta?
+5) Qual é a função que lê o conteúdo de uma mensagem que chegou?
+6) Qual é a função que escreve uma mensagem de retorno?
+
+Usando o código de client.c, encontre:
+1) Qual é a função que especifica o tipo de conexão e o protocolo usado?
+2) Qual é a função que tenta conectar ao servidor?
+3) Qual é a função que escreve para o servidor?
+4) Qual é a função que lê uma resposta de retorno?
+
+
+ATIVIDADE PRÁTICA
+Implemente a seguinte funcionalidade em seu jogo: ao invés dele ser controlado
+pelo teclado local, ele deverá ser controlado pelo teclado de um outro
+computador, isto é:
+
+* computador 1 (servidor):
+  - controla as regras jogo
+  - mostra informações na tela
+
+* computador 2 (cliente):
+  - envia comandos pelo teclado em tempo real
+
+Seu sistema deve obrigatoriamente manter a estrutura MVC.
+
+Esse código é experimental e não será (necessariamente) usado na versão final do
+jogo. Por isso, um branch específico no sistema de controle de versão pode ser
+recomendado.
+
+OBSERVAÇÕES
+1) O prazo final para entrega é às 23h59 do dia marcado. Não serão permitidos
+atrasos.
+2) Na entrega, coloque um link para o repositório GitHub em que o jogo está.
+3) A nota, em princípio, será dada ao grupo. Porém, se ficar constatado que um
+dos membros do grupo claramente trabalhou mais que o outro, poderá haver
+penalidades a ambos os membros do grupo.
+
