@@ -104,7 +104,12 @@ int main() {
           for (int ret=0; ret<MAX_CONEXOES; ret++) {
             if (conexao_usada[ret] == 1) {
               printf("Avisando user %d\n", ret);
-              send(connection_fd[ret], output_buffer, 50, 0);
+              if (send(connection_fd[ret], output_buffer, 50, MSG_NOSIGNAL) == -1) {
+               /* Usuario desconectou!?? */
+                printf("Usuario %d desconectou!\n", ret);
+                remover_conexao(ret);
+
+              }
             }
           }
         }
@@ -112,6 +117,7 @@ int main() {
     }
   }
 
+  printf("Encerrando server...\n");
   for (user_iterator=0; user_iterator<MAX_CONEXOES; user_iterator++)
     remover_conexao(user_iterator);
 
