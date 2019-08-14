@@ -1,7 +1,7 @@
 #ifndef PLAYBACK_HPP
 #define PLAYBACK_HPP
 
-#include "portaudio.h"
+#include <portaudio.h>
 #include <vector>
 
 namespace Audio {
